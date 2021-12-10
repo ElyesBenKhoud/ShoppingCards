@@ -51,7 +51,7 @@ const App = () => {
       return [...prev, { ...clickedItem, amount: 1 }];
     });
   };
-
+  // remove item on click with id
   const handleRemoveFromCart = (id: number) => {
     setCartItems((prev) =>
       prev.reduce((ack, item) => {
