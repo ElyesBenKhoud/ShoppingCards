@@ -31,15 +31,15 @@ const App = () => {
     "products",
     getProducts
   );
-
+  //get the total
   const getTotalItems = (items: CartItemType[]) =>
     items.reduce((ack: number, item) => ack + item.amount, 0);
-
+  //add carts
   const handleAddToCart = (clickedItem: CartItemType) => {
     setCartItems((prev) => {
       // 1. Is the item already added in the cart?
       const isItemInCart = prev.find((item) => item.id === clickedItem.id);
-
+      //if there is cart then map through them
       if (isItemInCart) {
         return prev.map((item) =>
           item.id === clickedItem.id
