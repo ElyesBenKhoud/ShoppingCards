@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import Badge from "@material-ui/core/Badge";
 //style
-import { Wrapper } from "./App.styles";
+import { Wrapper, StyledButton } from "./App.styles";
 //types
 export type CartItemType = {
   id: NumberConstructor;
@@ -31,7 +31,7 @@ const App = () => {
   );
   console.log(data);
 
-  const getTotalItems = () => null;
+  const getTotalItems = (items: CartItemType[]) => null;
   const handleAddToCart = (clickedItem: CartItemType) => null;
   const handleRemoveFromCart = () => null;
 
@@ -43,7 +43,10 @@ const App = () => {
       <Drawer anchor="right" open={CartOpen} onClose={() => setCartOpen(false)}>
         cart goes here
       </Drawer>
-
+      <StyledButton onClick={() => setCartOpen(true)}>
+        <Badge badgeContent={getTotalItems(CartItems)} color="error"></Badge>
+        <AddShoppingCartIcon />
+      </StyledButton>
       <Grid container spacing={3}>
         {data?.map((item: CartItemType) => (
           <Grid xs={12} sm={4}>
