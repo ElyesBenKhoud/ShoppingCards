@@ -8,7 +8,16 @@ import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import Badge from "@material-ui/core/Badge";
 //style
 import { Wrapper } from "./App.styles";
-
+//types
+export type CartItemType = {
+  id: NumberConstructor;
+  category: string;
+  description: string;
+  image: string;
+  price: number;
+  title: string;
+  amount: number;
+};
 const getProducts = async () => {
   await (await fetch("https://fakestoreapi.com/products")).json();
 };
