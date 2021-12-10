@@ -1177,7 +1177,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.6.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.6.2", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.16.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
   integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
@@ -1615,6 +1615,13 @@
     "@babel/runtime" "^7.4.4"
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
+
+"@mui/icons-material@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.2.1.tgz#f037aeb7a0491bf855eaebea53de8ee427b3014e"
+  integrity sha512-AFOn0bbaGd1dw8oYE40dv3I+QnfS5xP5HSUiUGsvb1ntP0cM1kW4VqQp7BtL7DbOpEsw1ZTbw67tDqSCH7utNg==
+  dependencies:
+    "@babel/runtime" "^7.16.3"
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"

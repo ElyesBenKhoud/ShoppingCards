@@ -70,8 +70,6 @@ const App = () => {
 
   return (
     <Wrapper>
-      <h1>Copyright ©</h1>
-      <h6>Mohamed Elyes ben khoud</h6>
       <Drawer anchor="right" open={cartOpen} onClose={() => setCartOpen(false)}>
         <Cart
           cartItems={cartItems}
