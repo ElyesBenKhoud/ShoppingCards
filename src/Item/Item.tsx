@@ -8,7 +8,7 @@ type Props = {
   item: CartItemType;
   handleAddToCart: (clickedItem: CartItemType) => void;
 };
-
+//display the item
 const Item: React.FC<Props> = ({ item, handleAddToCart }) => (
   <Wrapper>
     <img src={item.image} alt={item.title} />
