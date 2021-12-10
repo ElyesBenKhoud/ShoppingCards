@@ -40,6 +40,10 @@ const App = () => {
 
   return (
     <Wrapper>
+      <Drawer anchor="right" open={CartOpen} onClose={() => setCartOpen(false)}>
+        cart goes here
+      </Drawer>
+
       <Grid container spacing={3}>
         {data?.map((item: CartItemType) => (
           <Grid xs={12} sm={4}>
